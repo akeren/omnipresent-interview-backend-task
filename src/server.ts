@@ -1,6 +1,13 @@
+import { createServer } from 'http';
 import dotenv from 'dotenv-safe';
-import add from '@src/math/add';
+import app from '@src/app';
 
 dotenv.config();
 
-console.log(add(50, 3));
+const port = process.env.PORT || 3000;
+
+const server = createServer(app);
+
+server.listen(port, (): void => {
+  console.log(`Server running at http://127.0.0.1:${port}`);
+});
