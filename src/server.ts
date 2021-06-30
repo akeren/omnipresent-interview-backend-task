@@ -4,6 +4,9 @@ import app from '@src/app';
 
 dotenv.config();
 
+// eslint-disable-next-line import/first
+import '@src/database/mongoose';
+
 const port = process.env.PORT || 3000;
 
 const server = createServer(app);
