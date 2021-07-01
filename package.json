@@ -23,6 +23,7 @@
     "@types/dotenv-safe": "^8.1.1",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.5",
+    "@types/pino": "^6.3.8",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
     "eslint": "^7.29.0",
@@ -44,9 +45,12 @@
     "@types/express": "^4.17.12",
     "@types/mongoose": "^5.11.97",
     "@types/morgan": "^1.9.2",
+    "dayjs": "^1.10.5",
     "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.13.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "pino": "^6.11.3",
+    "pino-pretty": "^5.1.0"
   }
 }
