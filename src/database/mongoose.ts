@@ -12,5 +12,6 @@ import log from '@src/log/logger';
     log.info('DB connection established!');
   } catch (error) {
     log.error('DB connection error', error);
+    process.exit(1);
   }
 })();
