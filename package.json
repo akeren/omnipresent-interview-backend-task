@@ -24,6 +24,7 @@
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.5",
     "@types/pino": "^6.3.8",
+    "@types/yup": "^0.29.11",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
     "eslint": "^7.29.0",
@@ -51,6 +52,7 @@
     "mongoose": "^5.13.0",
     "morgan": "^1.10.0",
     "pino": "^6.11.3",
-    "pino-pretty": "^5.1.0"
+    "pino-pretty": "^5.1.0",
+    "yup": "^0.32.9"
   }
 }

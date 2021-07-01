@@ -1,0 +1,50 @@
+[
+   {
+      "firstName":"Roy",
+      "lastName":"Testerton",
+      "dateOfBirth":"19/02/1990",
+      "jobTitle":"Software developer",
+      "company":"Test co",
+      "country":"5c8a1dfa2f8fb814b56fa181"
+   },
+   {
+      "firstName":"Lisa",
+      "lastName":"Testora",
+      "dateOfBirth":"11/07/1984",
+      "jobTitle":"CTO",
+      "company":"Test co",
+      "country":"5c88fa8cf4afda39709c295d"
+   },
+   {
+      "firstName":"Simon",
+      "lastName":"McTester",
+      "dateOfBirth":"01/11/1987",
+      "jobTitle":"Product manager",
+      "company":"Mock industries",
+      "country":"5c8a364c14eb5c17645c910c"
+   },
+   {
+      "firstName":"Selina",
+      "lastName":"Testo",
+      "dateOfBirth":"23/11/1972",
+      "jobTitle":"Software developer",
+      "company":"Mock industries",
+      "country":"5c8a1e1a2f8fb814b56fa182"
+   },
+   {
+      "firstName":"Tim",
+      "lastName":"Mockman",
+      "dateOfBirth":"12/11/1972",
+      "jobTitle":"Software developer",
+      "company":"Mock industries",
+      "country":"5c8a368c14eb5c17645c910d"
+   },
+   {
+      "firstName":"Melissa",
+      "lastName":"Mocker",
+      "dateOfBirth":"10/01/1982",
+      "jobTitle":"Software developer",
+      "company":"Mock industries",
+      "country":"5c8a36a014eb5c17645c910e"
+   }
+]
