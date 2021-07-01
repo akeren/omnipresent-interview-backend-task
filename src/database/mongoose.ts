@@ -1,4 +1,5 @@
 import { connect } from 'mongoose';
+import log from '@src/log/logger';
 
 (async (): Promise<void> => {
   try {
@@ -8,8 +9,8 @@ import { connect } from 'mongoose';
       useCreateIndex: true,
       useFindAndModify: false,
     });
-    console.log('DB connection established!');
+    log.info('DB connection established!');
   } catch (error) {
-    console.error(error);
+    log.error('DB connection error', error);
   }
 })();
