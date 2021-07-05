@@ -12,6 +12,8 @@ This repository contains the solution to the backend task assigned to me as a pr
 
 ## Proposal 
 
+This proposal gives an overview of the future revamp of the current developed system. It covers authentication and the architectural style. 
+
 ## Authentication
 
 The current developed service doesn't have an authentication scheme. I intend to adopt a Json web token (JWT) as the authentication mechanism hence the service developed is a RESTFul API. 
@@ -22,4 +24,4 @@ JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and s
 
 ## Intened Revamp Architecture
 
-The revamp architecture of the current developed will be a [microservice architectural](https://drive.google.com/file/d/1pgpyCTZ8lB1x_yv-rJSY3CT3nLnx9TkI/view?usp=sharing) style as shown in the diagram below
+The revamp architecture of the current developed will be a [microservice architectural](https://drive.google.com/file/d/1pgpyCTZ8lB1x_yv-rJSY3CT3nLnx9TkI/view?usp=sharing) style where an **API gateway** will be deligating all requests to apt services and obtaining responses. The need for an API gateway is to enforce ***polyglot persistence** hence different **DBMS** will be used extensively. 
