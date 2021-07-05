@@ -1,15 +1,14 @@
 import { Request, Response } from 'express';
-import { createEmployee, indexEmployee } from '@src/services/employeeService';
+import { createCountry, indexCountry } from '@src/services/countryService';
 
 // eslint-disable-next-line import/prefer-default-export
-export async function store(req: Request, res: Response): Promise<void> {
+export async function store(req: Request, res: Response): Promise<void | Response> {
   try {
-    const employee = await createEmployee(req.body);
-
+    const country = await createCountry(req.body);
     res.status(201).json({
       status: true,
-      message: 'Employee created successfully',
-      data: employee,
+      message: 'Country created successfully',
+      data: country,
     });
   } catch (error) {
     res.status(400).json({
@@ -21,11 +20,11 @@ export async function store(req: Request, res: Response): Promise<void> {
 
 export async function index(req: Request, res: Response): Promise<void | Response> {
   try {
-    const employees = await indexEmployee({});
+    const countries = await indexCountry({});
     res.status(200).json({
       status: true,
-      message: 'Employees retrieved successfully',
-      data: employees,
+      message: 'Countries retrieved successfully',
+      data: countries,
     });
   } catch (error) {
     res.status(400).json({

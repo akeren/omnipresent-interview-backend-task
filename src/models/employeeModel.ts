@@ -41,12 +41,25 @@ const employeeSchema = new Schema<EmployeeDocument>(
     country: {
       type: Schema.Types.ObjectId,
       ref: 'Country',
+      required: [true, 'Country is required'],
     },
   },
   {
     timestamps: true,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
   }
 );
+
+// eslint-disable-next-line func-names
+employeeSchema.pre(/^find/, function (next) {
+  this.populate({
+    path: 'country',
+    select: '-updatedAt',
+  });
+
+  next();
+});
 
 const Employee = model<EmployeeDocument>('Employee', employeeSchema);
 

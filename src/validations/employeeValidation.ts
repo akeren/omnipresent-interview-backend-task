@@ -8,5 +8,6 @@ export const createEmployeeSchema = object({
     dateOfBirth: string().required('Please provide your date of birth.'),
     jobTitle: string().required('Job title is required'),
     company: string().required('Company name is required'),
+    country: string().required('Country is required'),
   }),
 });
