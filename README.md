@@ -22,6 +22,4 @@ JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and s
 
 ## Intened Revamp Architecture
 
-The revamp architecture of the current developed will be a microservice architectural style as shown in the diagram below: 
-
-![System Architecture](https://drive.google.com/file/d/1pgpyCTZ8lB1x_yv-rJSY3CT3nLnx9TkI/view?usp=sharing)
+The revamp architecture of the current developed will be a [microservice architectural](https://drive.google.com/file/d/1pgpyCTZ8lB1x_yv-rJSY3CT3nLnx9TkI/view?usp=sharing) style as shown in the diagram below
